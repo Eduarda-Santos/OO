@@ -1,20 +1,36 @@
 package tads.oo;
 
+import java.util.Random;
+import java.util.Scanner;
+
 public class Main {
 
-    public static void metodo1 (int x){
-        int y = 0;
+    public static void main(String[] args){
 
-        y = x + 1;
-        System.out.println("Valor de y ="+y);
+        Random aleatorio =  new Random();
     }
-
 
     public static void main(String[] args) {
 	// write your code here
 
-        System.out.println("hello world");
+        Scanner scan = new Scanner(System.in);
+        int fichas, aposta, ususoma;
+        String nome;
 
-        metodo1(10);
+        System.out.println("Digite seu nome:");
+        nome  = scan.nextLine();
+
+        System.out.println("Quantidade de fichas:");
+        fichas = scan.nextInt();
+
+        while (fichas != 0){
+            System.out.println("Quantida de fichas que deseja apostar:");
+            aposta = scan.nextInt();
+
+            System.out.println("Valor da soma:");
+            ususoma = scan.nextInt();
+
+
+        }
     }
 }
