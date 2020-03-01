@@ -7,14 +7,8 @@ public class Main {
 
     public static void main(String[] args){
 
-        Random aleatorio =  new Random();
-    }
-
-    public static void main(String[] args) {
-	// write your code here
-
         Scanner scan = new Scanner(System.in);
-        int fichas, aposta, ususoma;
+        int fichas, aposta, ususoma, soma, jogadas = 0, acertos = 0, quant = 0;
         String nome;
 
         System.out.println("Digite seu nome:");
@@ -29,7 +23,30 @@ public class Main {
 
             System.out.println("Valor da soma:");
             ususoma = scan.nextInt();
+            jogadas++;
 
+            Random rand = new Random();
+            int um = rand.nextInt(6);
+            int dois = rand.nextInt(6);
+            soma = um + dois;
+
+            if(soma == ususoma){
+                aposta = aposta * 2;
+                fichas = fichas + aposta;
+                System.out.println("Acertou! Você ganhou o dobro da sua aposta: "+fichas);
+                acertos++;
+            }
+            if ((soma == ususoma -1) || (soma == ususoma +1)){
+                aposta = aposta / 2;
+                fichas = fichas + aposta;
+                System.out.println("Chegou perto! Você ganhou a metade da sua aposta: "+fichas);
+            }
+            else{
+                System.out.println("Perdeu! Zerou sua aposta");
+                aposta = 0;
+                fichas = fichas + aposta;
+            }
+            quant = quant + aposta;
 
         }
     }
