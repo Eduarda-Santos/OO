@@ -1,4 +1,7 @@
 import java.util.Scanner;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 public class Principal {
     
     public static void main(String[] args){
@@ -61,4 +64,18 @@ public class Principal {
         }while(cont == 0);
         
     }
+
+    
+public class TestesParseSoma {
+
+   @Test
+    @Test
+    void testExpectedException() {
+
+    Assertions.assertThrows(NumberFormatException.class, () -> {
+        Integer.parseInt("One");
+    });
+
+    }
+
 }

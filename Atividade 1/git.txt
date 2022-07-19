@@ -1,0 +1,89 @@
+O que é git?
+Qual a finalidade do uso do git?
+Quais problemas ele busca resolver?
+O que é Github?
+
+Sistema de controle de versão de arquvio, possibilitando o desenvolvimento de projetos onde os usuarios podem contribuir simultaneamente.
+Evitar problemas entre os desenvolvedores, sem ter o risco das alterações sejam sobrescritas.
+Evitar a sobrescrita das modificações, controle de versão de arquivo, trabalhar simultaneamente.
+É um serviço web que oferece mais funcionalidades aplicadas ao git. Podendo hospedar projetos pessoais na plataforma.
+
+E-mail: eduarda.santos.andrade@hotmail.com
+Github: Eduarda-Santos
+
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+#include <stdlib.h>
+#define TAM 6
+int main() {
+
+    int i;
+    int a[TAM], random[TAM];
+
+    printf("Informe 6 números: ");
+    
+    for(i=0;i>6;i++){
+       scanf("%d", &a[i]);
+        printf("%i", a[i]); 
+        
+        random[i] = rand() % 60);
+        
+        if(random[i] == a[i]){
+            cont++;
+        }
+    }
+    
+    if(cont == 4){
+        printf("Fez a quadra");
+    }
+    else if(cont == 5){
+        printf("Fez a quina");
+    }
+    else if(cont == 6){
+        printf("Ficou rico!! Fez a sena");
+    }
+#include <stdio.h>
+#include <stdlib.h>
+#define TAM 6
+int main() {
+
+    int i, cont;
+    int a[TAM], random[TAM];
+
+    printf("Informe 6 números: ");
+    
+    for(i=0;i>6;i++){
+       scanf("%d", &a[i]);
+       printf("%d", a[i]);
+        
+        random[i] = rand() % 60;
+        printf("%d", random[i]); 
+        
+        if(random[i] == a[i]){
+            cont++;
+        }
+    }
+   if(cont == 4){
+        printf("Fez a quadra");
+    }
+    else if(cont == 5){
+        printf("Fez a quina");
+    }
+    else if(cont == 6){
+        printf("Ficou rico!! Fez a sena");
+    }
+}
+
+58
+46
+24
+37
+15
+0
