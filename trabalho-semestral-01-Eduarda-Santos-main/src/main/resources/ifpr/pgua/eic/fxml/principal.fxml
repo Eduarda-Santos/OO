@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+
+<BorderPane xmlns="http://javafx.com/javafx" 
+      xmlns:fx="http://javafx.com/fxml" 
+      prefHeight="400" prefWidth="600"
+      fx:controller="ifpr.pgua.eic.telas.JanelaPrincipal"
+      stylesheets="@../css/estilo.css">
+      
+   <padding>
+      <Insets topRightBottomLeft="20"/>
+   </padding>
+
+   <left>
+      <VBox spacing="5.0" alignment="CENTER">
+         <padding>
+            <Insets topRightBottomLeft="20"/>
+         </padding>
+      
+         <Button text="Cadastrar Professor" prefWidth="200" onAction="#carregaTelaCadastroProfessor"/>
+         <Button text="Cadastrar Aluno" prefWidth="200" onAction="#carregaTelaCadastroAluno"/>
+         <Button text="Cadastrar Curso" prefWidth="200" onAction="#carregaTelaCadastroCurso"/>
+         <Button text="Listar Alunos" prefWidth="200" onAction="#carregaTelaListarAluno"/>
+         <Button text="Listar Professores" prefWidth="200" onAction="#carregaTelaListarProfessor"/>
+         <Button text="Listar Cursos" prefWidth="200" onAction="#carregaTelaListarCurso"/>
+         <Button text="Matricula" prefWidth="200" onAction="#carregaTelaMatricula"/>
+      </VBox>
+   </left>
+
+
+</BorderPane>

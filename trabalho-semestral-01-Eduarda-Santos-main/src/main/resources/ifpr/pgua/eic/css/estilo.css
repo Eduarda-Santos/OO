@@ -1,0 +1,16 @@
+.root{
+    -fx-background-color: rgb(168, 168, 162);
+}
+  
+.button{
+    -fx-padding: 15px 32px;
+    -fx-padding-bottom: 100px;
+    -fx-border-radius: 12px;
+    -fx-background-color: rgb(175, 170, 170);
+    
+}
+
+.text-field{
+    -fx-background-color: rgb(126, 126, 123);
+}
+
